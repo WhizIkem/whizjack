@@ -1,8 +1,7 @@
-
-
 let sum = 0;
 let hasWhizjack = false;
 let isAlive = false;
+let isGameStarted = false; // Add a flag to track if the game has started
 let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
@@ -47,6 +46,11 @@ function getRandomCard() {
 }
 
 function startGame() {
+  if (isGameStarted) {
+    alert("The game has already started. Finish this round first.");
+    return;
+  }
+  isGameStarted = true; // Set the flag to true
   isAlive = true;
   hasWhizjack = false;
   let firstCard = getRandomCard();
@@ -69,15 +73,22 @@ function renderGame() {
     message = "You've got Whizjack!";
     hasWhizjack = true;
     increaseChips();
+    isGameStarted = false; // Reset the flag when the game is won
   } else {
     message = "You're out of the game!";
     isAlive = false;
     decreaseChips();
+    isGameStarted = false; // Reset the flag when the game is lost
   }
   messageEl.textContent = message;
 }
 
 function newCard() {
+  if (!isGameStarted) {
+    alert("Please start the game first.");
+    return;
+  }
+
   if (!isAlive || hasWhizjack) {
     alert("Please start a new game.");
   } else {
@@ -96,7 +107,7 @@ function increaseChips() {
 }
 
 function decreaseChips() {
-  player.chips -= 10;
+  player.chips -= 100;
   if (player.chips < 0) {
     player.chips = 0;
   }
