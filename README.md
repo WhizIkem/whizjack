@@ -9,12 +9,19 @@ WhizJack is a simple card game where you aim to get as close to 21 as possible w
 3. Click "START GAME" to begin a new round.
 4. Click "NEW CARD" to draw additional cards.
 
+If you want to work with the source code, you can clone this repository to your local machine:
+
+```shell
+  git clone https://github.com/whizikem/CounterApp.git
+  2. Open the `index.html` file in your browser to
+  launch the app.
+
 
 ## Game Rules
 - Your goal is to get as close to 21 as possible without exceeding it.
 - Number cards are worth their face value (e.g., 2, 3, 4).
 - Face cards (Jack, Queen, King) are worth 10 points each.
-- Aces can be worth either 1 or 11 points, depending on which value benefits your hand.
+- Aces can are worth 11 points.
 - If your total score exceeds 21, you lose the round.
 - If you get exactly 21, you win the round and get WhizJack!
 

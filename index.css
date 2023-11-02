@@ -1,0 +1,54 @@
+/* style the button */
+body {
+  background-image: url("assets/casino.jpeg");
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color:white;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 10px;
+}
+
+h1 {
+  color: goldenrod;
+}
+
+#message-el {
+  font-style: italic;
+}
+
+button {
+  background: goldenrod;
+  color: #006400;
+  width: 200px;
+  border: none;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 10px 10px;
+  font-size: 24px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+}
+
+#player-name {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px 0px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
