@@ -101,13 +101,13 @@ function newCard() {
 }
 
 function increaseChips() {
-  player.chips += 101;
+  player.chips += 100;
   playerEl.textContent = player.name + ": $" + player.chips;
   saveScores();
 }
 
 function decreaseChips() {
-  player.chips -= 51;
+  player.chips -= 10;
   if (player.chips < 0) {
     player.chips = 0;
   }
