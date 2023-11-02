@@ -107,7 +107,7 @@ function increaseChips() {
 }
 
 function decreaseChips() {
-  player.chips -= 100;
+  player.chips -= 50;
   if (player.chips < 0) {
     player.chips = 0;
   }
