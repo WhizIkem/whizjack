@@ -11,8 +11,7 @@ WhizJack is a simple card game where you aim to get as close to 21 as possible w
 
 If you want to work with the source code, you can clone this repository to your local machine:
 
-```shell
-  git clone https://github.com/whizikem/CounterApp.git
+  1. git clone https://github.com/whizikem/CounterApp.git
   2. Open the `index.html` file in your browser to
   launch the app.
 
